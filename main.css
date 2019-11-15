@@ -1,0 +1,79 @@
+/* Styling the entire page, to have a background image, color as backup  */
+body {
+  font-family: "Caveat", cursive;
+  padding: 10px;
+  background-image: url("paper-grid.png");
+  background-color: white;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styling the title of the page */
+h1 {
+  background: yellow;
+  font-size: 35px;
+  padding: 15px;
+  color: black;
+  text-align: center;
+}
+
+/* A class for centering objects easier  */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: center;
+}
+
+/* Styling the new to do item input box */
+#newTask {
+  width: 30%;
+  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling the Add Button */
+#newItemButton {
+  margin: 0 auto;
+  display: block;
+  padding: 0px;
+  width: 5%;
+  background: grey;
+  font-size: 16px;
+}
+
+/* Trying to style the to do list to the middle of the screen  */
+
+ul li {
+  position: center;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 25px;
+  display: flex;
+  outline: none;
+  width: 75%;
+  color: blue;
+}
+
+/* Changes colour on mouse hover  */
+ul li:hover {
+  background: red;
+}
+
+/* Make the check box x2 the default size  */
+input[type="checkbox"] {
+  transform: scale(2);
+  align-content: left;
+}
+
+/* Wrap everything in a div container  */
+div {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}

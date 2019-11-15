@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- css, google font and javascript  -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <script src="mainjs.js" async></script>
+    <title>Project 2 - To Do List</title>
+  </head>
+  <header>
+    <!-- Icon and a h1 title for the page  -->
+    <img src="todolistIcon.png" alt="to do list icon " width="150" height="150" class="center">
+    <h1>To-Do-List of Winter 2019</h1>
+  </header>
+  <body>
+    <div>
+      <!-- Name of the to do list, input to add new item and a button to click on to add new item to the to do list  -->
+      <input type="text" id ="newTask" placeholder="Type your new to do item here....." />
+      <button id="newItemButton" onclick="addNew()" >Add New Item</button>
+      <!-- The list of to dos  -->
+      <ul id="todoList">
+        <li>December 01, 2019</li>
+      </ul>
+    </div>
+    <footer>
+      <p class="center">&copy; Copyright by Mark Song. All Rights Reserved.</p>
+    </footer>
+</html>
