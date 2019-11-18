@@ -15,12 +15,13 @@ function addNew() {
   myList.appendChild(newTaskLi);
   console.log("Item and Checkbox Added Successfully");
 }
+// above code no error
 
-// ABOVE ARE DONE DONE CODEEE  ----------------------------------------------------- FINALIZIED
-
+//Doesn't work
 // Selecting every element inside the li element
 // declaring a for loop starting from 0 to the length of myList (li)
-//Appending a delete button to every element; li
+//creating a complete button and assigning them a classname of b-delete and adding a textnode of X
+//Appending a delete button to every element of li
 var myList = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myList.length; i++) {
@@ -32,6 +33,7 @@ for (i = 0; i < myList.length; i++) {
   myList[i].appendChild(completeButton);
 }
 
+////Doesn't work
 // If a delete button is clicked it will delete the parent's element
 function removeItem() {
   var deleteTask = document.getElementsByClassName("b-delete");
@@ -43,6 +45,9 @@ function removeItem() {
     };
   }
 }
+
+//selecting every checkbox under the classname of "checkboxes"
+//if checkboxes isn't empty, listen for a event listen click and highlight them
 var myList = document.getElementsByTagName("li");
 var j;
 for (j = 0; j < myList.length; j++) {
@@ -54,6 +59,7 @@ for (j = 0; j < myList.length; j++) {
   }
 }
 
+// highlight the checkboxes that are checked and make them style = line through it
 function highLight(event) {
   console.log("highlight event entered");
   if (checkboxes[j].checked) {
